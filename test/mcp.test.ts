@@ -235,6 +235,6 @@ describe('MCP server & Cursor plugin bundle', () => {
 
     checkFrontmatter(path.join(pluginRoot, 'rules/vibemock-webhooks.mdc'), ['description']);
     checkFrontmatter(path.join(pluginRoot, 'skills/vibemock/SKILL.md'), ['name', 'description']);
-    checkFrontmatter(path.join(pluginRoot, 'commands/test-webhooks.md'), ['name', 'description']);
+    checkFrontmatter(path.join(pluginRoot, 'commands/vibemock-test.md'), ['name', 'description']);
   });
 });
