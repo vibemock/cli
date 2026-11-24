@@ -186,8 +186,12 @@ describe('MCP server & Cursor plugin bundle', () => {
     }
   });
 
-  it('has a valid Cursor single-plugin bundle in packages/cursor-plugin', () => {
+  it('has a valid Cursor single-plugin bundle in packages/cursor-plugin', (t) => {
     const pluginRoot = path.resolve(import.meta.dirname, '../../../cursor-plugin');
+    if (!fs.existsSync(pluginRoot)) {
+      t.skip('Cursor plugin bundle not present outside monorepo');
+      return;
+    }
     const pluginJsonPath = path.join(pluginRoot, '.cursor-plugin', 'plugin.json');
     const marketplaceJsonPath = path.join(pluginRoot, '.cursor-plugin', 'marketplace.json');
 
