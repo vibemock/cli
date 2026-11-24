@@ -1,5 +1,8 @@
 # @vibemock/cli
 
+[![npm version](https://img.shields.io/npm/v/%40vibemock%2Fcli?label=%40vibemock%2Fcli&color=0ea5e9)](https://www.npmjs.com/package/@vibemock/cli)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-10b981.svg)](./LICENSE)
+
 Standalone, zero-dependency CLI for VibeMock inspection, scenario switching, async callback waiting, tunnel-free local webhook forwarding, and multi-agent skill installation.
 
 Supports protocol-accurate webhook signing (`stripe-v1`, `github-sha256`, `svix-v1`, `hmac-sha256`, `hmac-sha256-base64`) so official SDKs verify callbacks unmodified.
@@ -76,3 +79,11 @@ vibemock trigger --app my-stripe --env dev --event invoice.paid --payload '{"typ
 vibemock wait --app my-stripe --env dev --biz-key ORDER-1001 --timeout 15000 --json
 vibemock records clear --app my-stripe --env dev --biz-key ORDER-1001 --json
 ```
+
+## Support & Contributions
+
+This repository is an official distribution mirror maintained from VibeMock's internal monorepo.
+
+- **Bug reports & feature requests**: Please open an issue on [GitHub Issues](https://github.com/vibemock/cli/issues).
+- **Pull requests**: External pull requests are not accepted on this distribution repository.
+- **License**: Licensed under the [Apache License 2.0](./LICENSE).
