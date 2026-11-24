@@ -1,12 +1,12 @@
 {
   "name": "@vibemock/cli",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Standalone CLI for VibeMock inspection, scenario control, async callback waiting, local webhook forwarding, and multi-agent skill installation.",
   "license": "Apache-2.0",
   "homepage": "https://vibemock.bid",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vibemock/cli.git"
+    "url": "git+https://github.com/vibemock/cli.git"
   },
   "bugs": {
     "url": "https://github.com/vibemock/cli/issues"

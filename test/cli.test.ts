@@ -362,7 +362,7 @@ describe('CLI commands', () => {
   it('reads version from package.json, prints inbound_method/inbound_path in records list, and supports apps create', async () => {
     const tmpHome = makeTempDir();
     try {
-      assert.equal(CLI_VERSION, '1.2.0');
+      assert.equal(CLI_VERSION, '1.2.1');
       const env = { HOME: tmpHome } as NodeJS.ProcessEnv;
       await runCli(['config', 'set', '--token', 'vmk_test_token_12345678'], {
         io: makeBufferIO().io,
